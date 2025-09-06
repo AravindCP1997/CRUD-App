@@ -5,7 +5,7 @@ const app = express();
 const port = 
 app.use(express.json());
 
-const url = 'mongodb://localhost/mynewdatabase';
+const url = 'mongodb+srv://aravindpradeepca_db_user:Tx78WpwmyMpFFCM9@aravindcp12.k670gfn.mongodb.net/';
 mongoose.connect(url,{useNewUrlParser:true});
 
 const con = mongoose.connection;
