@@ -5,8 +5,13 @@ const app = express();
 const port = 
 app.use(express.json());
 
+const data = {
+    name:"Aravind",
+    age:28
+}
+
 app.get('/',(req,res)=>{
-    res.send('This is our response for this Get Request');
+    res.json(data);
 })
 
 app.post('/',(req,res)=>{
