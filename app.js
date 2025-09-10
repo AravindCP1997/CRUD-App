@@ -1,9 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const core = require('cors');
 const app = express();
 
 const port = 
 app.use(express.json());
+app.use(cors());
 
 const data = {
     name:"Aravind",
